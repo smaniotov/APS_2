@@ -46,7 +46,9 @@ namespace APS_Criptografia
                             Form1 frm = new Form1();
                             this.Hide();
                             frm.Show();
-                        }
+                          //  CurrentUser user = new CurrentUser(2);
+                            
+                                                   }
                     else
                         {
                             MessageBox.Show("Usuário não encontrado","Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -58,6 +60,13 @@ namespace APS_Criptografia
             
             
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmUsu frm = new frmUsu();
+            this.Hide();
+            frm.Show();
         }
     }
 }

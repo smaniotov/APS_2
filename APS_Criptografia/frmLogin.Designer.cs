@@ -35,12 +35,13 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(160, 32);
+            this.label1.Location = new System.Drawing.Point(149, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 0;
@@ -49,7 +50,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(160, 66);
+            this.label2.Location = new System.Drawing.Point(149, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 1;
@@ -57,23 +58,23 @@
             // 
             // txtUsu
             // 
-            this.txtUsu.Location = new System.Drawing.Point(202, 29);
+            this.txtUsu.Location = new System.Drawing.Point(191, 22);
             this.txtUsu.Name = "txtUsu";
-            this.txtUsu.Size = new System.Drawing.Size(100, 20);
+            this.txtUsu.Size = new System.Drawing.Size(139, 20);
             this.txtUsu.TabIndex = 2;
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(202, 63);
+            this.txtSenha.Location = new System.Drawing.Point(191, 56);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(100, 20);
+            this.txtSenha.Size = new System.Drawing.Size(139, 20);
             this.txtSenha.TabIndex = 3;
             // 
             // btnEntrar
             // 
             this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEntrar.Location = new System.Drawing.Point(215, 108);
+            this.btnEntrar.Location = new System.Drawing.Point(245, 95);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(85, 23);
             this.btnEntrar.TabIndex = 4;
@@ -83,19 +84,30 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackgroundImage = global::APS_Criptografia.Properties.Resources.download;
+            this.flowLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowLayoutPanel1.BackgroundImage")));
             this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 22);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(120, 117);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(126, 96);
             this.flowLayoutPanel1.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(152, 95);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Novo Usuário";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(316, 152);
+            this.ClientSize = new System.Drawing.Size(344, 139);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.txtSenha);
@@ -121,5 +133,6 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button button1;
     }
 }
